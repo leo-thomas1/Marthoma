@@ -12,49 +12,54 @@ body {
     color: #fff;
     display: flex;
     justify-content: space-between;
-    padding: 4px 40px 4px 12px;
+    flex-wrap: wrap;
+    padding: 4px 16px;
     font-size: 14px;
   }
   
   .top-right {
     font-size: 13px;
+    margin-top: 2px;
   }
   
   /* Header */
   .main-header {
     display: flex;
     align-items: center;
-    padding: 20px 40px 12px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 16px;
     background-color: #fff;
     box-shadow: 0 1px 10px #d1e6f9ee;
   }
   
   .logo {
-    height: 55px;
-    margin-right: 18px;
+    height: 50px;
+    margin-bottom: 10px;
   }
   
   .header-title h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    line-height: 1.1;
+    line-height: 1.2;
   }
   
   .header-title span {
     display: block;
+    font-size: 1rem;
     font-weight: normal;
-    font-size: 1.05rem;
   }
   
   /* Navigation */
   .main-nav {
     background-color: #f3faff;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 22px;
-    padding: 9px 0;
-    font-size: 17px;
+    gap: 18px;
+    padding: 10px;
+    font-size: 16px;
     font-weight: 500;
     box-shadow: 0 2px 5px #e8f4fd;
   }
@@ -62,7 +67,6 @@ body {
   .main-nav a {
     text-decoration: none;
     color: #1978a5;
-    position: relative;
     transition: color 0.2s;
   }
   
@@ -74,82 +78,56 @@ body {
   /* Hero Section */
   .hero-welcome {
     display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 30px 16px;
     align-items: flex-start;
-    justify-content: space-between;
-    gap: 32px;
-    padding: 38px 40px 18px;
+    justify-content: center;
   }
   
   .hero-image {
-    width: 50%;
-    height: auto;
-    min-width: 320px;
+    flex: 1 1 300px;
+    width: 100%;
     border-radius: 6px;
     box-shadow: 0 3px 22px #d2eaf640;
   }
   
   .welcome-box {
-    width: 50%;
-    height: 100%;
-
+    flex: 1 1 300px;
+    width: 100%;
     background-color: #0074c6;
     color: #fff;
     border-radius: 5px;
-    padding: 34px 26px 24px;
+    padding: 26px;
     box-shadow: 0 4px 16px #b2c3d850;
   }
   
   .welcome-box h2 {
     margin-top: 0;
-    margin-bottom: 18px;
-    font-size: 1.5rem;
+    margin-bottom: 16px;
+    font-size: 1.4rem;
     font-weight: 600;
   }
   
   .welcome-box p {
-    font-size: 1.06rem;
-    line-height: 1.7;
+    font-size: 1.05rem;
+    line-height: 1.6;
   }
   
-  /* Responsive Design */
-  @media (max-width: 900px) {
-    .hero-welcome {
-      flex-direction: column;
-      gap: 20px;
-      padding: 24px;
-    }
-  
-    .hero-image,
-    .welcome-box {
-      width: 100%;
-      max-width: 100%;
-    }
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #f3faff;
-    color: #888;
-    text-align: center;
-    font-size: 15px;
-    padding: 18px 0;
-    margin-top: 40px;
-    border-top: 1px solid #e4effb;
-  }
   /* About Section */
-.about-section {
-    margin: 48px auto 26px;
+  .about-section {
+    margin: 40px auto;
     max-width: 940px;
     background: #fff;
-    padding: 35px 24px 30px;
+    padding: 30px 16px;
     border-radius: 4px;
     box-shadow: 0 1px 12px #e5eefb60;
     text-align: center;
   }
   
   .about-section h2 {
-    font-size: 2rem;
-    margin-bottom: 18px;
+    font-size: 1.8rem;
+    margin-bottom: 16px;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -162,7 +140,7 @@ body {
   }
   
   .about-section p {
-    font-size: 1.13rem;
+    font-size: 1.1rem;
     line-height: 1.7;
     color: #333;
     margin-bottom: 18px;
@@ -170,8 +148,8 @@ body {
   
   .learn-link {
     color: #21a7ee;
-    text-decoration: none;
     font-size: 1rem;
+    text-decoration: none;
     transition: color 0.2s;
   }
   
@@ -183,20 +161,20 @@ body {
   /* Clergy Section */
   .clergy-section {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 36px;
+    justify-content: center;
+    gap: 24px;
     max-width: 1100px;
-    margin: 30px auto 0;
+    margin: 30px auto;
     background: #fff;
-    padding: 25px 12px 28px;
+    padding: 25px 12px;
     border-radius: 4px;
     box-shadow: 0 1px 12px #e5eefb33;
   }
   
   .clergy-card {
-    flex: 1 1 290px;
-    max-width: 290px;
+    flex: 1 1 280px;
+    max-width: 300px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -206,7 +184,7 @@ body {
   .clergy-card img {
     width: 98%;
     max-width: 230px;
-    height: 245px;
+    height: auto;
     object-fit: cover;
     border-radius: 2px;
     margin-bottom: 10px;
@@ -214,7 +192,7 @@ body {
   }
   
   .clergy-role {
-    font-size: 1.08rem;
+    font-size: 1.05rem;
     font-weight: 500;
     color: #333;
     text-transform: uppercase;
@@ -223,22 +201,58 @@ body {
   }
   
   .clergy-name {
-    font-size: 1.01rem;
+    font-size: 1rem;
     color: #333;
     margin-bottom: 9px;
   }
   
-  /* Responsive */
-  @media (max-width: 950px) {
-    .clergy-section {
-      flex-direction: column;
-      align-items: center;
-      gap: 18px;
-      padding: 20px 0;
+  /* Footer */
+  footer {
+    background-color: #f3faff;
+    color: #888;
+    text-align: center;
+    font-size: 15px;
+    padding: 18px 12px;
+    margin-top: 40px;
+    border-top: 1px solid #e4effb;
+  }
+  
+  /* Universal Mobile Tweaks */
+  @media (max-width: 600px) {
+    .header-title h1 {
+      font-size: 1.5rem;
     }
   
-    .clergy-card {
-      max-width: 350px;
+    .hero-welcome {
+      padding: 20px 12px;
+    }
+  
+    .welcome-box h2 {
+      font-size: 1.2rem;
+    }
+  
+    .about-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .about-section p {
+      font-size: 1rem;
+    }
+  
+    .main-nav {
+      font-size: 15px;
+      gap: 14px;
+      flex-direction: column;
+    }
+  
+    .top-bar {
+      flex-direction: column;
+      gap: 4px;
+      font-size: 13px;
+    }
+  
+    .top-right {
+      text-align: left;
     }
   }
   
