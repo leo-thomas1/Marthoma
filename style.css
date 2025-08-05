@@ -1,0 +1,244 @@
+/* Base Styling */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f7fafd;
+    color: #222;
+  }
+  
+  /* Top Bar */
+  .top-bar {
+    background-color: #1095cc;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 40px 4px 12px;
+    font-size: 14px;
+  }
+  
+  .top-right {
+    font-size: 13px;
+  }
+  
+  /* Header */
+  .main-header {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px 12px;
+    background-color: #fff;
+    box-shadow: 0 1px 10px #d1e6f9ee;
+  }
+  
+  .logo {
+    height: 55px;
+    margin-right: 18px;
+  }
+  
+  .header-title h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.1;
+  }
+  
+  .header-title span {
+    display: block;
+    font-weight: normal;
+    font-size: 1.05rem;
+  }
+  
+  /* Navigation */
+  .main-nav {
+    background-color: #f3faff;
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    padding: 9px 0;
+    font-size: 17px;
+    font-weight: 500;
+    box-shadow: 0 2px 5px #e8f4fd;
+  }
+  
+  .main-nav a {
+    text-decoration: none;
+    color: #1978a5;
+    position: relative;
+    transition: color 0.2s;
+  }
+  
+  .main-nav a:hover {
+    color: #02598d;
+    border-bottom: 2px solid #1978a5;
+  }
+  
+  /* Hero Section */
+  .hero-welcome {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 38px 40px 18px;
+  }
+  
+  .hero-image {
+    width: 50%;
+    height: auto;
+    min-width: 320px;
+    border-radius: 6px;
+    box-shadow: 0 3px 22px #d2eaf640;
+  }
+  
+  .welcome-box {
+    width: 50%;
+    height: 100%;
+
+    background-color: #0074c6;
+    color: #fff;
+    border-radius: 5px;
+    padding: 34px 26px 24px;
+    box-shadow: 0 4px 16px #b2c3d850;
+  }
+  
+  .welcome-box h2 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .welcome-box p {
+    font-size: 1.06rem;
+    line-height: 1.7;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 900px) {
+    .hero-welcome {
+      flex-direction: column;
+      gap: 20px;
+      padding: 24px;
+    }
+  
+    .hero-image,
+    .welcome-box {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #f3faff;
+    color: #888;
+    text-align: center;
+    font-size: 15px;
+    padding: 18px 0;
+    margin-top: 40px;
+    border-top: 1px solid #e4effb;
+  }
+  /* About Section */
+.about-section {
+    margin: 48px auto 26px;
+    max-width: 940px;
+    background: #fff;
+    padding: 35px 24px 30px;
+    border-radius: 4px;
+    box-shadow: 0 1px 12px #e5eefb60;
+    text-align: center;
+  }
+  
+  .about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .about-section .highlight {
+    color: #ff7701;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  
+  .about-section p {
+    font-size: 1.13rem;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 18px;
+  }
+  
+  .learn-link {
+    color: #21a7ee;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s;
+  }
+  
+  .learn-link:hover {
+    color: #1978a5;
+    text-decoration: underline;
+  }
+  
+  /* Clergy Section */
+  .clergy-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 36px;
+    max-width: 1100px;
+    margin: 30px auto 0;
+    background: #fff;
+    padding: 25px 12px 28px;
+    border-radius: 4px;
+    box-shadow: 0 1px 12px #e5eefb33;
+  }
+  
+  .clergy-card {
+    flex: 1 1 290px;
+    max-width: 290px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .clergy-card img {
+    width: 98%;
+    max-width: 230px;
+    height: 245px;
+    object-fit: cover;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 10px #b4c8e644;
+  }
+  
+  .clergy-role {
+    font-size: 1.08rem;
+    font-weight: 500;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+  }
+  
+  .clergy-name {
+    font-size: 1.01rem;
+    color: #333;
+    margin-bottom: 9px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 950px) {
+    .clergy-section {
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+      padding: 20px 0;
+    }
+  
+    .clergy-card {
+      max-width: 350px;
+    }
+  }
+  
