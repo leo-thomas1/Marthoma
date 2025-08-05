@@ -28,6 +28,7 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    right: 30%;
     padding: 16px;
     background-color: #fff;
     box-shadow: 0 1px 10px #d1e6f9ee;
@@ -253,6 +254,63 @@ body {
   
     .top-right {
       text-align: left;
+    }
+  }
+  
+  .main-footer {
+    background: #232323;
+    color: #e0e0e0;
+    padding: 36px 0 0 0;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+  }
+  .footer-cols {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 24px 16px 24px;
+    flex-wrap: wrap;
+  }
+  .footer-col {
+    flex: 1 1 170px;
+    min-width: 180px;
+    margin-bottom: 24px;
+  }
+  .footer-col h3 {
+    margin: 0 0 15px 0;
+    font-size: 1.08rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ddd;
+  }
+  .footer-col a {
+    color: #b7e3ff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  .footer-col a:hover {
+    text-decoration: underline;
+  }
+  .footer-bar {
+    background: #191919;
+    color: #aaa;
+    text-align: center;
+    font-size: 15px;
+    padding: 14px 0 14px 0;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+  }
+  @media (max-width: 900px) {
+    .footer-cols {
+      flex-direction: column;
+      gap: 0px;
+      padding: 0 10px 16px 10px;
+    }
+    .footer-col {
+      margin-bottom: 19px;
     }
   }
   
