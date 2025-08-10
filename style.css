@@ -1,305 +1,274 @@
-/* Base Styling */
+/* =============== Reset & Variables =============== */
+* { box-sizing: border-box; }
+:root{
+  --primary: #1978a5;
+  --accent: #ff7701;
+  --footer-bg: #232323;
+  --maxw: 1200px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7fafd;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* make footer stick to bottom */
 body {
-    margin: 0;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: #f7fafd;
-    color: #222;
-  }
-  
-  /* Top Bar */
-  .top-bar {
-    background-color: #1095cc;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4px 16px;
-    font-size: 14px;
-  }
-  
-  /* Header -- Like 2nd Image */
-  .site-header {
-    display: flex;
-    align-items: center;
-    background: #fff;
-    box-shadow: 0 1px 10px #d1e6f9ee;
-    padding: 16px 40px 14px 32px;
-    min-height: 70px;
-    justify-content: flex-start;
-  }
-  
-  .header-logo {
-    height: 48px;
-    width: auto;
-    margin-right: 16px;
-    display: block;
-    flex-shrink: 0;
-  }
-  
-  .header-text-block {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .header-title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #222;
-    line-height: 1.08;
-  }
-  
-  .header-subtitle {
-    font-size: 1.15rem;
-    font-weight: 400;
-    color: #222;
-    margin-top: 2px;
-    letter-spacing: 0.5px;
-  }
-  
-  /* Main Navigation */
-  .main-nav {
-    background-color: #f3faff;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 22px;
-    padding: 11px 0;
-    font-size: 17px;
-    font-weight: 500;
-    box-shadow: 0 2px 5px #e8f4fd;
-  }
-  
-  .main-nav a {
-    text-decoration: none;
-    color: #1978a5;
-    transition: color 0.2s;
-  }
-  .main-nav a:hover {
-    color: #02598d;
-    border-bottom: 2px solid #1978a5;
-  }
-  
-  /* Hero Section */
-  .hero-welcome {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 32px;
-    padding: 38px 40px 18px 40px;
-    flex-wrap: wrap;
-  }
-  
-  .hero-image {
-    border-radius: 6px;
-    width: 54%;
-    min-width: 320px;
-    max-width: 540px;
-    box-shadow: 0 3px 22px #d2eaf640;
-  }
-  
-  .welcome-box {
-    background: #0074c6;
-    color: white;
-    border-radius: 5px;
-    padding: 34px 26px 24px 26px;
-    max-width: 350px;
-    min-width: 260px;
-    box-shadow: 0 4px 16px #b2c3d850;
-  }
-  
-  .welcome-box h2 {
-    margin-top: 0;
-    font-size: 1.5rem;
-    margin-bottom: 18px;
-    font-weight: 600;
-  }
-  .welcome-box p {
-    font-size: 1.06rem;
-    line-height: 1.7;
-    margin-bottom: 0;
-  }
-  
-  /* About Section */
-  .about-section {
-    margin: 48px auto 26px auto;
-    background: #fff;
-    max-width: 940px;
-    border-radius: 4px;
-    padding: 35px 24px 30px 24px;
-    box-shadow: 0 1px 12px #e5eefb60;
-    text-align: center;
-  }
-  
-  .about-section h2 {
-    font-size: 2rem;
-    margin: 0 0 18px 0;
-    font-weight: 400;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
-  
-  .about-section .highlight {
-    color: #ff7701;
-    font-weight: 700;
-    letter-spacing: 2px;
-  }
-  
-  .about-section p {
-    font-size: 1.13rem;
-    line-height: 1.7;
-    color: #333;
-    margin-bottom: 0;
-  }
-  
-  /* Clergy Section */
-  .clergy-section {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 36px;
-    max-width: 1100px;
-    margin: 30px auto 0 auto;
-    background: #fff;
-    border-radius: 4px;
-    padding: 25px 12px 28px 12px;
-    box-shadow: 0 1px 12px #e5eefb33;
-  }
-  
-  .clergy-card {
-    flex: 1 1 0px;
-    max-width: 290px;
-    min-width: 210px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .clergy-card img {
-    width: 98%;
-    max-width: 230px;
-    height: 245px;
-    object-fit: cover;
-    border-radius: 2px;
-    margin-bottom: 10px;
-    box-shadow: 0 2px 10px #b4c8e644;
-  }
-  .clergy-role {
-    font-size: 1.08rem;
-    font-weight: 500;
-    letter-spacing: 1px;
-    color: #333;
-    margin-bottom: 2px;
-    text-transform: uppercase;
-  }
-  .clergy-name {
-    font-size: 1.01rem;
-    margin-bottom: 9px;
-    color: #333;
-  }
-  
-  /* Footer */
-  .main-footer {
-    background: #232323;
-    color: #e0e0e0;
-    padding: 36px 0 0 0;
-    font-size: 16px;
-    letter-spacing: 0.1px;
-  }
-  .footer-cols {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 24px 16px 24px;
-    flex-wrap: wrap;
-  }
-  .footer-col {
-    flex: 1 1 170px;
-    min-width: 180px;
-    margin-bottom: 24px;
-  }
-  .footer-col h3 {
-    margin: 0 0 15px 0;
-    font-size: 1.08rem;
-    font-weight: 400;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #ddd;
-  }
-  .footer-col a {
-    color: #b7e3ff;
-    text-decoration: none;
-    font-size: 16px;
-  }
-  .footer-col a:hover {
-    text-decoration: underline;
-  }
-  .footer-bar {
-    background: #191919;
-    color: #aaa;
-    text-align: center;
-    font-size: 15px;
-    padding: 14px 0 14px 0;
-    margin-top: 10px;
-    letter-spacing: 0.5px;
-  }
-  
-  /* Responsive */
-  @media (max-width: 1050px) {
-    .hero-welcome {
-      flex-direction: column;
-      gap: 20px;
-      padding: 24px;
-    }
-    .hero-image, .welcome-box {
-      width: 100%;
-      max-width: 100%;
-      min-width: 0;
-    }
-    .clergy-section {
-      flex-direction: column;
-      align-items: center;
-      gap: 18px;
-      padding: 20px 0;
-    }
-    .clergy-card {
-      max-width: 350px;
-    }
-    .footer-cols {
-      flex-direction: column;
-      gap: 0px;
-      padding: 0 10px 16px 10px;
-    }
-    .footer-col {
-      margin-bottom: 19px;
-    }
-  }
-  
-  @media (max-width: 700px) {
-    .site-header {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 12px;
-      min-height: 0;
-    }
-    .header-text-block {
-      align-items: flex-start;
-      text-align: left;
-      margin-top: 6px;
-    }
-    .header-title { font-size: 1.15rem; }
-    .header-logo { height: 36px; margin: 0; }
-    .main-nav { font-size: 15px; gap: 10px; }
-  }
-  
-  @media (max-width: 500px) {
-    .about-section h2, 
-    .clergy-role, 
-    .footer-col h3 { font-size: 1.1rem; }
-    .about-section p,
-    .clergy-name { font-size: 1rem; }
-  }
-  
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 16px; /* base; headings/text will use clamp() */
+}
+
+/* Optional main wrapper so footer pushes down reliably */
+.site-main { flex: 1 0 auto; }
+
+/* simple container utility */
+.center {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* =============== Top bar =============== */
+.top-bar {
+  background-color: #1095cc;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 20px;
+  font-size: clamp(12px, 1.2vw, 14px);
+}
+
+/* =============== Header =============== */
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: #fff;
+  box-shadow: 0 1px 10px rgba(209,230,249,0.93);
+  padding: clamp(10px, 2.5vw, 16px) 24px;
+}
+
+.header-logo {
+  height: clamp(36px, 6vw, 64px);
+  width: auto;
+  flex-shrink: 0;
+  display: block;
+}
+
+.header-text-block { display: flex; flex-direction: column; }
+
+.header-title {
+  font-size: clamp(1.1rem, 2.8vw, 2.2rem);
+  font-weight: 700;
+  color: #222;
+  line-height: 1.05;
+}
+.header-subtitle {
+  font-size: clamp(.9rem, 1.6vw, 1.2rem);
+  color: #222;
+  margin-top: 2px;
+}
+
+/* =============== Navigation =============== */
+.main-nav {
+  background-color: #f3faff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(10px, 3vw, 22px);
+  padding: clamp(8px, 1.8vw, 11px) 0;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(232,244,253,1);
+}
+.main-nav a {
+  text-decoration: none;
+  color: var(--primary);
+  font-size: clamp(.95rem, 1.2vw, 1.05rem);
+  padding: 4px 6px;
+}
+.main-nav a:hover {
+  color: #02598d;
+  border-bottom: 2px solid var(--primary);
+}
+
+/* =============== Hero =============== */
+.hero-welcome {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+  padding: clamp(18px, 3.2vw, 38px) 24px;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  border-radius: 6px;
+  width: clamp(260px, 50%, 540px);
+  max-width: 54%;
+  min-width: 220px;
+  object-fit: cover;
+  box-shadow: 0 3px 22px rgba(210,234,246,0.25);
+}
+
+.welcome-box {
+  background: var(--primary);
+  color: white;
+  border-radius: 5px;
+  padding: clamp(18px, 2.6vw, 34px);
+  max-width: 360px;
+  min-width: 240px;
+  box-shadow: 0 4px 16px rgba(178,195,216,0.3);
+}
+.welcome-box h2 {
+  margin: 0 0 12px;
+  font-size: clamp(1.1rem, 2.2vw, 1.5rem);
+}
+.welcome-box p {
+  margin: 0;
+  font-size: clamp(.95rem, 1.8vw, 1.06rem);
+  line-height: 1.6;
+}
+
+/* =============== About =============== */
+.about-section {
+  margin: clamp(20px, 3vw, 48px) auto;
+  background: #fff;
+  max-width: 940px;
+  border-radius: 4px;
+  padding: clamp(18px, 2.8vw, 35px);
+  box-shadow: 0 1px 12px rgba(229,238,251,0.38);
+  text-align: center;
+}
+.about-section h2 {
+  font-size: clamp(1.25rem, 2.4vw, 2rem);
+  margin: 0 0 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.about-section .highlight {
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* =============== Clergy =============== */
+.clergy-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 1100px;
+  margin: 20px auto 30px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 12px rgba(229,238,251,0.2);
+}
+.clergy-card {
+  flex: 1 1 220px;
+  max-width: 290px;
+  min-width: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+}
+.clergy-card img {
+  width: 100%;
+  max-width: 230px;
+  height: 245px;
+  object-fit: cover;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 10px rgba(180,200,230,0.4);
+}
+.clergy-role {
+  font-size: clamp(.95rem, 1.6vw, 1.08rem);
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #333;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+.clergy-name {
+  font-size: clamp(.92rem, 1.4vw, 1.01rem);
+  color: #333;
+}
+
+/* =============== Footer (dark theme) =============== */
+.main-footer {
+  background: var(--footer-bg);
+  color: #e0e0e0;
+  padding: 36px 0 0;
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  margin-top: auto; /* push to bottom when content is short */
+}
+.footer-cols {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 24px 16px;
+  flex-wrap: wrap;
+}
+.footer-col {
+  flex: 1 1 170px;
+  min-width: 180px;
+  margin-bottom: 24px;
+}
+.footer-col h3 {
+  margin: 0 0 15px;
+  font-size: 1.08rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ddd;
+}
+.footer-col a {
+  color: #b7e3ff;
+  text-decoration: none;
+  font-size: 16px;
+}
+.footer-col a:hover { text-decoration: underline; }
+.footer-bar {
+  background: #191919;
+  color: #aaa;
+  text-align: center;
+  font-size: 15px;
+  padding: 14px 0;
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+}
+
+/* =============== Responsiveness =============== */
+@media (max-width: 900px) {
+  .hero-image { width: 100%; max-width: 100%; min-width: 0; }
+  .welcome-box { width: 100%; max-width: 100%; }
+  .footer-cols { justify-content: center; padding: 0 16px; }
+  .main-nav { gap: 12px; padding: 10px 0; }
+}
+
+@media (max-width: 600px) {
+  .header-title { font-size: 1.1rem; }
+  .header-subtitle { font-size: .95rem; }
+  .main-nav a { font-size: 14px; }
+  .about-section h2 { font-size: 1.2rem; }
+  .footer-col h3 { font-size: 1.05rem; }
+  .footer-bar { font-size: 14px; }
+  .top-bar { font-size: 12px; padding: 6px 12px; }
+  .clergy-card img { height: 200px; }
+}
+
+/* minor helpers */
+.hidden-mobile { display: none; }
