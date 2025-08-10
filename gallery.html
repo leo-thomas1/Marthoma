@@ -4,47 +4,70 @@
   <meta charset="UTF-8">
   <title>Photo Gallery - Palankara Horeb Mar Thoma Church</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <style>
-    body { margin:0; font-family:sans-serif; background:#f7fafd; }
-    .gallery-title { text-align:center; margin:32px 0 20px 0; font-size:2rem; color:#1978a5; }
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 24px;
-      max-width: 1100px;
-      margin: 0 auto 40px auto;
-      padding: 0 10px;
-    }
-    .gallery-grid img {
-      width: 100%;
-      border-radius: 6px;
-      box-shadow: 0 4px 18px #cbe5fd65;
-      transition: transform 0.2s, box-shadow 0.2s;
-      cursor: pointer;
-    }
-    .gallery-grid img:hover {
-      transform: scale(1.04);
-      box-shadow: 0 8px 28px #1978a555;
-    }
-    @media (max-width:600px) {
-      .gallery-title { font-size:1.35rem; }
-      .gallery-grid { gap: 10px; }
-    }
-  </style>
+  <link rel="stylesheet" href="gallery.css">
 </head>
-<nav class="main-nav">
+<body>
+  <!-- Navigation -->
+  <nav class="main-nav">
     <a href="index.html">Home</a>
   </nav>
-<body>
+
+  <!-- Gallery Title -->
   <div class="gallery-title">Photo Gallery</div>
+
+  <!-- Gallery Grid -->
   <div class="gallery-grid">
-    <img src="gallery1.jpg" alt="View 1">
-    <img src="gallery2.jpg" alt="View 2">
-    <img src="gallery3.jpg" alt="View 3">
-    <img src="gallery4.jpg" alt="View 4">
-    <img src="gallery5.jpg" alt="View 5">
-    <img src="gallery6.jpg" alt="View 6">
-    <!-- Add more images as desired -->
+    <div class="gallery-item">
+      <img src="img/im1.jpg" alt="View 1">
+      <a href="img/im1.jpg" download class="download-btn">⬇ Download</a>
+    </div>
+    <div class="gallery-item">
+      <img src="img/im2.jpg" alt="View 2">
+      <a href="img/im2.jpg" download class="download-btn">⬇ Download</a>
+    </div>
+    <div class="gallery-item">
+      <img src="img/im3.jpg" alt="View 3">
+      <a href="img/im3.jpg" download class="download-btn">⬇ Download</a>
+    </div>
+    <div class="gallery-item">
+      <img src="img/im4.jpg" alt="View 4">
+      <a href="img/im4.jpg" download class="download-btn">⬇ Download</a>
+    </div>
+    <div class="gallery-item">
+      <img src="img/im5.jpg" alt="View 5">
+      <a href="img/im5.jpg" download class="download-btn">⬇ Download</a>
+    </div>
   </div>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h3>CONTACT US</h3>
+        <div>PALANKARA HOREB MAR THOMA CHURCH</div>
+        <div>Mundakkai, Palankara, Nilambur</div>
+        <div>Tel: +91 469 2740120 (O), 2602881 (R)</div>
+        <div class="email">
+          <span>✉️</span> scsmtc@yahoo.in
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>WORD OF GOD</h3>
+        <div>As for God, his way is perfect: The Lord's word is flawless; he shields all who take refuge in him.</div>
+        <div class="verse">Psalm 18:30</div>
+      </div>
+      <div class="footer-col">
+        <h3>LOCATION</h3>
+        <div>Mundakkai, Palankara</div>
+        <div>Near YMCA, Tiruvalla, Kerala - 689101</div>
+        <div class="map-link">
+          <a href="https://goo.gl/maps/YourGoogleMapsLink" target="_blank">View on Map</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bar">
+      &copy; Palankara Horeb Mar Thoma Church. All rights reserved.
+    </div>
+  </footer>
 </body>
 </html>
