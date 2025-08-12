@@ -1,0 +1,86 @@
+/* Organisations Page Styles - Mobile First */
+
+/* Section container */
+.org-section {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #ff7701;
+    letter-spacing: 1px;
+  }
+  
+  /* Each organisation card */
+  .org-card {
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 10px #e3eef9;
+    padding: 15px;
+    margin-bottom: 18px;
+  }
+  
+  /* Image + title row */
+  .org-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  
+  .org-header img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .org-header h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #1978a5;
+  }
+  
+  /* Contact details */
+  .org-contact {
+    margin-top: 8px;
+    font-size: 0.95rem;
+    color: #444;
+  }
+  
+  /* Description */
+  .org-about {
+    margin-top: 8px;
+    line-height: 1.5;
+    font-size: 0.95rem;
+    color: #333;
+  }
+  
+  /* Tablet */
+  @media (min-width: 600px) {
+    .org-header img {
+      width: 90px;
+      height: 90px;
+    }
+    .org-header h3 {
+      font-size: 1.4rem;
+    }
+    .org-about {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Desktop */
+  @media (min-width: 900px) {
+    .section-title {
+      font-size: 2rem;
+    }
+    .org-card {
+      padding: 20px;
+    }
+  }
+  
