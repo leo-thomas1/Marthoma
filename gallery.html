@@ -1,144 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Photo Gallery - Palankara Horeb Mar Thoma Church.</title>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="gallery.css">
+  <title>Palankara Horeb Mar Thoma Church</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="top-left">HOREB MAR THOMA CHURCH PALANKARA</div>
+    <div class="top-right">
+      📞 Tel: +91 9961604445 | 📧 Email: horeb.marthoma@gmail.com
+    </div>
+  </div>
+  
+  <!-- Header -->
+  <header class="site-header">
+    <img src="logo.webp" alt="Church Logo" class="header-logo">
+    <div class="header-text-block">
+      <div class="header-title">Horeb Mar Thoma Church</div>
+      <div class="header-subtitle">Palankara</div>
+    </div>
+  </header>
+  
   <!-- Navigation -->
   <nav class="main-nav">
-    <a href="index.html">Home</a>
+    <a href="#">Home</a>
+    <a href="#about">About Us</a>
+    <a href="organisations.html">Organisations</a>
+    <a href="gallery.html" target="_blank">Photo Gallery</a>
+    <a href="#contact">Contact Us</a>
   </nav>
-
-  <!-- Gallery Title -->
-  <div class="gallery-title">Photo Gallery</div>
-
-  <!-- Gallery Grid -->
-  <div class="gallery-grid">
-    <div class="gallery-item">
-      <img src="img/im1.jpg" alt="View 1">
-      <a href="img/im1.jpg" download class="download-btn">⬇ Download</a>
+  
+  <!-- Hero Section -->
+  <section class="hero-welcome">
+    <img src="church.jpg" alt="Church Front" class="hero-image" />
+    <div class="welcome-box">
+      <h2>Welcome to Parish Website</h2>
+      <p>
+        Welcome to the official website of Horeb Mar Thoma Parish located in Palankara.<br>
+        We hope this site will help you stay connected with ongoing church-related activities.<br>
+        Thank you for taking the time to visit and learn more about our parish.
+      </p>
     </div>
-    <div class="gallery-item">
-      <img src="img/im2.jpg" alt="View 2">
-      <a href="img/im2.jpg" download class="download-btn">⬇ Download</a>
+  </section>
+  
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2>
+      <span class="highlight">About</span> Horeb Mar Thoma Church
+    </h2>
+    <p>
+      Horeb Mar Thoma Church is a vibrant and blessed parish located in the heart of Mundakkai, Palankara in Nilambur. Established in the early 1950s, the church stands as a testimony to the unwavering vision and deep faith of our forefathers. What began as a small fellowship of just eight devoted families has, by the grace of God, grown into a thriving spiritual community of over 100 families. Today, Horeb Mar Thoma Church is not only a place of worship but also a cherished landmark that continues to inspire faith, fellowship, and service in the region.
+    </p>
+  </section>
+  
+  <!-- Clergy Section -->
+  <section id="contact" class="clergy-section">
+    <div class="clergy-card">
+      <img src="pop.jpg" alt="Metropolitan">
+      <div class="clergy-role">Metropolitan</div>
+      <div class="clergy-name">His Grace The Most Rev. Dr. Theodosius Mar Thoma Metropolitan</div>
     </div>
-    <div class="gallery-item">
-      <img src="img/im3.jpg" alt="View 3">
-      <a href="img/im3.jpg" download class="download-btn">⬇ Download</a>
+    <div class="clergy-card">
+      <img src="bishop.jpg" alt="Diocesan Bishop">
+      <div class="clergy-role">Diocesan Bishop</div>
+      <div class="clergy-name">Rt. Rev. Dr. Mathews Mar Makarios Episcopa</div>
     </div>
-    <div class="gallery-item">
-      <img src="img/im4.jpg" alt="View 4">
-      <a href="img/im4.jpg" download class="download-btn">⬇ Download</a>
+    <div class="clergy-card">
+      <img src="vicar.jpg" alt="Parish Vicar">
+      <div class="clergy-role">Parish Vicar</div>
+      <div class="clergy-name">Rev. Ajith K Oommen</div>
     </div>
-    <div class="gallery-item">
-      <img src="img/im5.jpg" alt="View 5">
-      <a href="img/im5.jpg" download class="download-btn">⬇ Download</a>
-    </div>
-    <div class="gallery-item">
-      <img src="img/IMG_4700.JPG" alt="View 6">
-      <a href="img/IMG_4700.JPG" download class="download-btn">⬇ Download</a>
-    </div>
-    <div class="gallery-item">
-      <img src="img/IMG-20250526-WA0026.jpg" alt="View 7">
-      <a href="img/IMG-20250526-WA0026.jpg" download class="download-btn">⬇ Download</a>
-    </div>
-    <div class="gallery-item">
-      <img src="img/IMG-20250805-WA0078.jpg" alt="View 8">
-      <a href="img/IMG-20250805-WA0078.jpg" download class="download-btn">⬇ Download</a>
-    </div>
-    <div class="gallery-item">
-      <img src="img/IMG-20250805-WA0105.jpg" alt="View 9">
-      <a href="img/IMG-20250805-WA0105.jpg" download class="download-btn">⬇ Download</a>
-    </div>
-    <div class="gallery-item">
-      <img src="img/IMG-20250805-WA0123.jpg" alt="View 10">
-      <a href="img/IMG-20250805-WA0123.jpg" download class="download-btn">⬇ Download</a>
-    </div>
-    <div class="gallery-item">
-      <img src="img/IMG-20250805-WA0126.jpg" alt="View 11">
-      <a href="img/IMG-20250805-WA0126.jpg" download class="download-btn">⬇ Download</a>
-    </div>
-    <div class="gallery-item">
-      <img src="img/IMG-20250805-WA0127.jpg" alt="View  12">
-      <a href="img/IMG-20250805-WA0127.jpg" download class="download-btn">⬇ Download</a>
-    </div>
-    <div class="gallery-item">
-      <img src="img/WhatsApp Image 2025-08-10 at 21.35.28_98746382.jpg" alt="View 13">
-      <a href="img/WhatsApp Image 2025-08-10 at 21.35.28_98746382.jpg" download class="download-btn">⬇ Download</a>
-    </div>
-    <div class="gallery-item">
-      <img src="img/WhatsApp Image 2025-08-10 at 21.35.28_aa6a00cf.jpg" alt="View 14">
-      <a href="img/WhatsApp Image 2025-08-10 at 21.35.28_aa6a00cf.jpg" download class="download-btn">⬇ Download</a>
-    </div>
-    <div class="gallery-item">
-      <img src="img/pic11.jpg" alt="View 15">
-      <a href="img/pic11.jpg" download class="download-btn">⬇ Download</a>
-    </div>
-    <div class="gallery-item">
-      <img src="img/pic12.jpg" alt="View 16">
-      <a href="img/pic12.jpg" download class="download-btn">⬇ Download</a>
-    </div>
-    <div class="gallery-item">
-      <img src="img/pic13.jpg" alt="View 17">
-      <a href="img/pic13.jpg" download class="download-btn">⬇ Download</a>
-    </div>
-    <div class="gallery-item">
-      <img src="img/pic14.jpg" alt="View 18">
-      <a href="img/pic14.jpg" download class="download-btn">⬇ Download</a>
-    </div>
-    <div class="gallery-item">
-      <img src="img/pic15.jpg" alt="View 19">
-      <a href="img/pic15.jpg" download class="download-btn">⬇ Download</a>
-    </div>
-    <div class="gallery-item">
-      <img src="img/pic16.jpg" alt="View 20">
-      <a href="img/pic16.jpg" download class="download-btn">⬇ Download</a>
-    </div>
-    <div class="gallery-item">
-      <img src="img/pic17.jpg" alt="View 21">
-      <a href="img/pic17.jpg" download class="download-btn">⬇ Download</a>
-    </div>
-    <div class="gallery-item">
-      <img src="img/pic18.jpg" alt="View 22">
-      <a href="img/pic18.jpg" download class="download-btn">⬇ Download</a>
-    </div>
-    <div class="gallery-item">
-      <img src="img/pic19.jpg" alt="View 23">
-      <a href="img/pic19.jpg" download class="download-btn">⬇ Download</a>
-    </div>
-    <div class="gallery-item">
-      <img src="img/pic 20.jpg" alt="View 23">
-      <a href="img/pic 20.jpg" download class="download-btn">⬇ Download</a>
-    </div>
-    
-
-  </div>
-
+  </section>
+  
   <!-- Footer -->
   <footer class="main-footer">
     <div class="footer-cols">
       <div class="footer-col">
         <h3>CONTACT US</h3>
         <div>PALANKARA HOREB MAR THOMA CHURCH</div>
-        <div>Palankara, Karulai, Nilambur</div>
+        <div>Mundakkai, Palankara, Nilambur</div>
         <div>Tel: +91 9961604445</div>
-        <div class="email">
-          <span>✉️</span> horeb.marthoma@gmail.com
+        <div style="margin-top:6px;">
+          <span style="font-size: 15px;">✉️</span>
+          Email: horeb.marthoma@gmail.com
         </div>
       </div>
       <div class="footer-col">
         <h3>WORD OF GOD</h3>
         <div>As for God, his way is perfect: The Lord's word is flawless; he shields all who take refuge in him.</div>
-        <div class="verse">Psalm 18:30</div>
+        <div style="margin-top:7px;font-weight:bold;">Psalm 18:30</div>
       </div>
       <div class="footer-col">
         <h3>LOCATION</h3>
         <div>Parayippadi, Palankara</div>
         <div>Nilambur, Kerala - 679330</div>
-        <div class="map-link">
+        <div style="margin-top:10px;">
           <a href="https://www.google.com/maps/place/Horeb+Marthoma+Church+Palankara/@11.3060394,76.3030352,20z/data=!4m6!3m5!1s0x3ba62325eff774f1:0xb8afe2196e790ed8!8m2!3d11.3060983!4d76.3034353!16s%2Fg%2F11v18xvc9n?entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">View on Map</a>
         </div>
       </div>
@@ -147,5 +107,6 @@
       &copy; Palankara Horeb Mar Thoma Church. All rights reserved.
     </div>
   </footer>
+
 </body>
 </html>
