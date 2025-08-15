@@ -29,9 +29,9 @@ body {
 }
 
 .top-right {
-  flex-wrap: nowrap;    /* Prevent items from wrapping */
-  white-space: nowrap;  /* Prevent line breaks */
-  min-width: 0;         /* Allow shrink */
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  min-width: 0;
 }
 
 .top-right span,
@@ -44,6 +44,14 @@ body {
   font-size: 16px;
   margin-right: 3px;
   vertical-align: middle;
+}
+
+/* Keep email icon, label, and address on single line */
+.email-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  white-space: nowrap;
 }
 
 /* Header */
@@ -350,6 +358,12 @@ body {
   .top-right {
     flex-wrap: wrap;
     white-space: normal;
+  }
+  .email-group {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    white-space: nowrap;
   }
 }
 
