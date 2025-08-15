@@ -414,3 +414,29 @@ body {
     max-width: 99vw;
   }
 }
+.footer-cols {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;           /* smaller gap */
+  max-width: 900px;
+  margin: auto;
+  padding: 0 8px 10px 8px;
+}
+.footer-col {
+  flex: 1 1 170px;
+  min-width: 180px;
+  margin-bottom: 8px;  /* reduced */
+  padding: 6px 0;      /* reduced */
+}
+@media (max-width: 1050px) {
+  .footer-cols {
+    flex-direction: column;
+    gap: 6px;
+    padding: 0 3px 7px 3px;
+  }
+  .footer-col {
+    margin-bottom: 4px;
+    padding: 3px 0;
+  }
+}
