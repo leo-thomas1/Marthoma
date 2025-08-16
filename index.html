@@ -25,7 +25,7 @@
   
   <!-- Header -->
   <header class="site-header">
-    <img src="logo.webp" alt="Church Logo" class="header-logo">
+    <img src="logo.webp" alt="Church Logo" class="header-logo" />
     <div class="header-text-block">
       <div class="header-title">Horeb Mar Thoma Church</div>
       <div class="header-subtitle">Palankara</div>
@@ -41,9 +41,15 @@
     <a href="#contact">Contact Us</a>
   </nav>
   
-  <!-- Hero Section -->
+  <!-- Hero Section with slideshow -->
   <section class="hero-welcome">
-    <img src="church.jpg" alt="Church Front" class="hero-image" />
+    <div class="hero-slideshow">
+      <img src="church.jpg" alt="Church Front 1" class="hero-slide active" />
+      <img src="church1.jpg" alt="Church Front 2" class="hero-slide" />
+      <img src="church2.jpg" alt="Church Front 3" class="hero-slide" />
+      <img src="church3.jpg" alt="Church Front 4" class="hero-slide" />
+      <img src="church4.jpg" alt="Church Front 5" class="hero-slide" />
+    </div>
     <div class="welcome-box">
       <h2>Welcome to Parish Website</h2>
       <p>
@@ -63,9 +69,10 @@
       Horeb Mar Thoma Church is a vibrant and blessed parish located in the heart of Mundakkai, Palankara in Nilambur. Established in the early 1950s, the church stands as a testimony to the unwavering vision and deep faith of our forefathers. What began as a small fellowship of just eight devoted families has, by the grace of God, grown into a thriving spiritual community of over 100 families. Today, Horeb Mar Thoma Church is not only a place of worship but also a cherished landmark that continues to inspire faith, fellowship, and service in the region.
     </p>
   </section>
+
   
   <!-- Clergy Section -->
-  <section id="contact" class="clergy-section">
+  <section id="cont" class="clergy-section">
     <div class="clergy-card">
       <img src="pop.jpg" alt="Metropolitan">
       <div class="clergy-role">Metropolitan</div>
@@ -84,7 +91,7 @@
   </section>
   
   <!-- Footer -->
-  <footer class="main-footer">
+  <section id="contact"  footer class="main-footer">
     <div class="footer-cols">
       <div class="footer-col">
         <h3>CONTACT US</h3>
@@ -114,6 +121,31 @@
       &copy; Palankara Horeb Mar Thoma Church. All rights reserved.
     </div>
   </footer>
+
+
+   <!-- JS for hero slideshow animation -->
+  <script>
+    const slides = document.querySelectorAll('.hero-slide');
+    let currentIndex = 0;
+  
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+    }
+  
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    }
+  
+    // Show first slide initially
+    showSlide(currentIndex);
+  
+    // Change slide every 2 seconds
+    setInterval(nextSlide, 3000);
+  </script>
+  
 
 </body>
 </html>
