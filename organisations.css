@@ -2,85 +2,100 @@
 
 /* Section container */
 .org-section {
-    max-width: 1100px;
-    margin: 20px auto;
-    padding: 0 15px;
-  }
-  
-  .section-title {
-    text-align: center;
-    font-size: 1.6rem;
-    margin-bottom: 20px;
-    color: #ff7701;
-    letter-spacing: 1px;
-  }
-  
-  /* Each organisation card */
-  .org-card {
-    background: #fff;
-    border-radius: 6px;
-    box-shadow: 0 1px 10px #e3eef9;
-    padding: 15px;
-    margin-bottom: 18px;
-  }
-  
-  /* Image + title row */
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ff7701;
+  letter-spacing: 1px;
+}
+
+/* Each organisation card */
+.org-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 10px #e3eef9;
+  padding: 25px;
+  margin-bottom: 28px;
+}
+
+/* Image + title horizontal row */
+.org-header {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.org-title-col {
+  flex: 2 1 300px;
+  min-width: 160px;
+}
+
+.org-title-col h3 {
+  font-size: 2rem;
+  margin: 0;
+  color: #1978a5;
+  font-weight: bold;
+}
+
+.org-img-col {
+  flex: 1 1 170px;
+  min-width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.org-img-col img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Contact details */
+.org-contact {
+  margin-top: 6px;
+  font-size: 1.05rem;
+  color: #444;
+}
+
+/* Description */
+.org-about {
+  margin-top: 12px;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+  .section-title { font-size: 1.5rem; }
+  .org-header { gap: 18px; }
+  .org-card { padding: 17px; }
+  .org-title-col h3 { font-size: 1.3rem; }
+  .org-img-col img { width: 120px; height: 120px; }
+}
+
+@media (max-width: 600px) {
   .org-header {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
   }
-  
-  .org-header img {
-    width: 70px;
-    height: 70px;
-    object-fit: cover;
-    border-radius: 4px;
-  }
-  
-  .org-header h3 {
-    font-size: 1.2rem;
-    margin: 0;
-    color: #1978a5;
-  }
-  
-  /* Contact details */
-  .org-contact {
-    margin-top: 8px;
-    font-size: 0.95rem;
-    color: #444;
-  }
-  
-  /* Description */
-  .org-about {
-    margin-top: 8px;
-    line-height: 1.5;
-    font-size: 0.95rem;
-    color: #333;
-  }
-  
-  /* Tablet */
-  @media (min-width: 600px) {
-    .org-header img {
-      width: 90px;
-      height: 90px;
-    }
-    .org-header h3 {
-      font-size: 1.4rem;
-    }
-    .org-about {
-      font-size: 1rem;
-    }
-  }
-  
-  /* Desktop */
-  @media (min-width: 900px) {
-    .section-title {
-      font-size: 2rem;
-    }
-    .org-card {
-      padding: 20px;
-    }
-  }
-  
+  .org-title-col { width: 100%; }
+  .org-img-col { width: 100%; }
+  .org-img-col img { width: 100px; height: 100px; }
+  .org-card { padding: 10px; }
+  .section-title { font-size: 1.2rem; }
+  .org-title-col h3 { font-size: 1.1rem; }
+  .org-contact { font-size: 0.95rem; }
+  .org-about { font-size: 0.95rem; }
+}
