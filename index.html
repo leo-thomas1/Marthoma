@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Palankara Horeb Mar Thoma Church</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <!-- Top Bar -->
@@ -22,7 +24,7 @@
       </span>
     </div>
   </div>
-  
+
   <!-- Header -->
   <header class="site-header">
     <img src="logo.webp" alt="Church Logo" class="header-logo">
@@ -31,8 +33,8 @@
       <div class="header-subtitle">Palankara</div>
     </div>
   </header>
-  
-  
+
+
   <!-- Navigation -->
   <nav class="main-nav">
     <a href="#">Home</a>
@@ -41,7 +43,7 @@
     <a href="gallery.html">Photo Gallery</a>
     <a href="#contact">Contact Us</a>
   </nav>
-  
+
   <!-- Hero Section -->
   <section class="hero-welcome">
     <div class="hero-slideshow">
@@ -49,7 +51,7 @@
       <img src="church2.jpg" alt="Church Front 2" class="hero-slide" />
       <img src="church4.jpg" alt="Church Front 4" class="hero-slide" />
     </div>
-        <div class="welcome-box">
+    <div class="welcome-box">
       <h2>Welcome to Parish Website</h2>
       <p>
         Welcome to the official website of Horeb Mar Thoma Parish located in Palankara.
@@ -58,22 +60,30 @@
       </p>
     </div>
   </section>
-  
+
   <!-- About Section -->
   <section id="about" class="about-section">
     <h2>
       <span class="highlight">About</span> Horeb Mar Thoma Church
     </h2>
     <p>
-      Horeb Mar Thoma Church is a vibrant and blessed parish located in the heart of Palankara in Nilambur. Established in the early 1950s, the church stands as a testimony to the unwavering vision and deep faith of our forefathers. What began as a small fellowship of eight devoted families has, by the grace of God, grown into a thriving spiritual community of over 100 families.
+      Horeb Mar Thoma Church is a vibrant and blessed parish located in the heart of Palankara in Nilambur. Established
+      in the early 1950s, the church stands as a testimony to the unwavering vision and deep faith of our forefathers.
+      What began as a small fellowship of eight devoted families has, by the grace of God, grown into a thriving
+      spiritual community of over 100 families.
 
-Today, Horeb Mar Thoma Church is not only a place of worship but also a cherished landmark that continues to inspire faith, fellowship, and service in the region.<br>
- Our parish is part of the Mar Thoma Syrian Church, which traces its roots to the apostolic tradition of St. Thomas, one of the twelve disciples of Jesus Christ. Horeb Mar Thoma Church functions under the Kunnamkulam Malabar Diocese of the Mar Thoma Sabha, receiving spiritual guidance and leadership through its diocesan bishop and the wider church community.
+      Today, Horeb Mar Thoma Church is not only a place of worship but also a cherished landmark that continues to
+      inspire faith, fellowship, and service in the region.<br>
+      Our parish is part of the Mar Thoma Syrian Church, which traces its roots to the apostolic tradition of St.
+      Thomas, one of the twelve disciples of Jesus Christ. Horeb Mar Thoma Church functions under the Kunnamkulam
+      Malabar Diocese of the Mar Thoma Sabha, receiving spiritual guidance and leadership through its diocesan bishop
+      and the wider church community.
 
-The parish continues to uphold its mission of being “lighted to lighten,” fostering spiritual growth and unity among its members while actively contributing to the life and witness of the Church.
+      The parish continues to uphold its mission of being “lighted to lighten,” fostering spiritual growth and unity
+      among its members while actively contributing to the life and witness of the Church.
     </p>
   </section>
-  
+
   <!-- Clergy Section -->
   <section id="cont" class="clergy-section">
     <div class="clergy-card">
@@ -92,9 +102,9 @@ The parish continues to uphold its mission of being “lighted to lighten,” fo
       <div class="clergy-name">Rev. Ajith K Oommen</div>
     </div>
   </section>
-  
+
   <!-- Footer -->
-  <section id="contact"  footer class="main-footer">
+  <section id="contact" footer class="main-footer">
     <div class="footer-cols">
       <div class="footer-col">
         <h3>CONTACT US</h3>
@@ -116,38 +126,40 @@ The parish continues to uphold its mission of being “lighted to lighten,” fo
         <div>Parayippadi, Palankara</div>
         <div>Nilambur, Kerala - 679330</div>
         <div style="margin-top:10px;">
-          <a href="https://www.google.com/maps/place/Horeb+Marthoma+Church+Palankara/@11.3060394,76.3030352,20z/data=!4m6!3m5!1s0x3ba62325eff774f1:0xb8afe2196e790ed8!8m2!3d11.3060983!4d76.3034353!16s%2Fg%2F11v18xvc9n?entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">View on Map</a>
+          <a href="https://www.google.com/maps/place/Horeb+Marthoma+Church+Palankara/@11.3060394,76.3030352,20z/data=!4m6!3m5!1s0x3ba62325eff774f1:0xb8afe2196e790ed8!8m2!3d11.3060983!4d76.3034353!16s%2Fg%2F11v18xvc9n?entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank">View on Map</a>
         </div>
       </div>
     </div>
     <div class="footer-bar">
       &copy; Palankara Horeb Mar Thoma Church. All rights reserved.
     </div>
-  </footer>
+    </footer>
 
 
-  <script>
-    const slides = document.querySelectorAll('.hero-slide');
-    let currentIndex = 0;
-  
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        slide.classList.toggle('active', i === index);
-      });
-    }
-  
-    function nextSlide() {
-      currentIndex = (currentIndex + 1) % slides.length;
+    <script>
+      const slides = document.querySelectorAll('.hero-slide');
+      let currentIndex = 0;
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.toggle('active', i === index);
+        });
+      }
+
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+      }
+
+      // Show first slide initially
       showSlide(currentIndex);
-    }
-  
-    // Show first slide initially
-    showSlide(currentIndex);
-  
-    // Change slide every 2 seconds
-    setInterval(nextSlide, 3000);
-  </script>
-  
+
+      // Change slide every 2 seconds
+      setInterval(nextSlide, 3000);
+    </script>
+
 
 </body>
+
 </html>

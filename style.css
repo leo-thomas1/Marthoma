@@ -195,11 +195,11 @@ body {
 }
 
 .about-section p {
-  font-size: 1.13rem;
+  font-size: 1 rem;
   line-height: 1.7;
   color: #333;
   margin-bottom: 0;
-  text-align: justify;
+ text-align: justify;
 }
 
 /* Clergy Section */
