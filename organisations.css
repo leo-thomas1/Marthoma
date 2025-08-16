@@ -1,43 +1,48 @@
-/* Organisations Page Styles - Mobile First */
-
-/* Section container */
+/* Container: max width with padding and centered */
 .org-section {
   max-width: 1100px;
   margin: 20px auto;
   padding: 0 15px;
+  box-sizing: border-box;
 }
 
+/* Section title */
 .section-title {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 20px;
   color: #ff7701;
   letter-spacing: 1px;
+  font-weight: 700;
 }
 
-/* Each organisation card */
+/* Organisation card container */
 .org-card {
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0 1px 10px #e3eef9;
+  box-shadow: 0 1px 10px rgba(227,238,249,0.8);
   padding: 25px;
   margin-bottom: 28px;
+  box-sizing: border-box;
 }
 
-/* Image + title horizontal row */
+/* Header flex container for title and image */
 .org-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 32px;
   flex-wrap: wrap;
   margin-bottom: 10px;
 }
 
+/* Title column takes 2/3 space, minimum width for smaller screens */
 .org-title-col {
   flex: 2 1 300px;
   min-width: 160px;
 }
 
+/* Heading styling */
 .org-title-col h3 {
   font-size: 2rem;
   margin: 0;
@@ -45,6 +50,7 @@
   font-weight: bold;
 }
 
+/* Image column takes 1/3 space */
 .org-img-col {
   flex: 1 1 170px;
   min-width: 120px;
@@ -53,21 +59,42 @@
   justify-content: center;
 }
 
+/* Organisation image styles */
+/* Default (Large Desktop) */
 .org-img-col img {
-  width: 320px;
-  height: 320px;
+  width: 240px;
+  height: 240px;
   object-fit: cover;
   border-radius: 8px;
+  max-width: 100%;
+  height: auto;
 }
 
-/* Contact details */
+/* Tablet (900px and below) */
+@media (max-width: 900px) {
+  .org-img-col img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* Mobile (600px and below) */
+@media (max-width: 600px) {
+  .org-img-col img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+
+/* Contact details styling */
 .org-contact {
   margin-top: 6px;
   font-size: 1.05rem;
   color: #444;
 }
 
-/* Description */
+/* Description paragraph styling */
 .org-about {
   margin-top: 12px;
   line-height: 1.6;
@@ -75,25 +102,37 @@
   color: #333;
 }
 
-/* Responsive design */
+/* Responsive adjustments */
+
+/* For tablets and small desktops (max-width 900px) */
 @media (max-width: 900px) {
   .section-title { font-size: 1.5rem; }
   .org-header { gap: 18px; }
   .org-card { padding: 17px; }
   .org-title-col h3 { font-size: 1.3rem; }
-  .org-img-col img { width: 120px; height: 120px; }
+  .org-img-col img {
+    width: 120px;
+    height: 120px;
+  }
 }
 
+/* For phones and very small tablets (max-width 600px) */
 @media (max-width: 600px) {
   .org-header {
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
+    gap: 12px;
   }
-  .org-title-col { width: 100%; }
-  .org-img-col { width: 100%; }
-  .org-img-col img { width: 100px; height: 100px; }
-  .org-card { padding: 10px; }
+  .org-title-col, .org-img-col {
+    width: 100%;
+    min-width: auto;
+    flex: none;
+  }
+  .org-img-col img {
+    width: 100px;
+    height: 100px;
+  }
+  .org-card { padding: 12px; }
   .section-title { font-size: 1.2rem; }
   .org-title-col h3 { font-size: 1.1rem; }
   .org-contact { font-size: 0.95rem; }
