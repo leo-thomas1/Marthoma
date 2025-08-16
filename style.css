@@ -81,8 +81,8 @@ body {
 
 .header-text-block {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: baseline; /* aligns subtitle to the base of the title */
+  gap: 16px;             /* space between title and subtitle */
 }
 
 .header-title {
@@ -93,12 +93,14 @@ body {
 }
 
 .header-subtitle {
-  font-size: 1.15rem;
+  font-size: 1.5rem;
   font-weight: 400;
   color: #222;
-  margin-top: 2px;
   letter-spacing: 0.5px;
+  margin-top: 0; /* REMOVE margin-top so subtitle stays on same line */
 }
+
+
 
 /* Main Navigation */
 .main-nav {
