@@ -1,4 +1,4 @@
-/* Container: max width with padding and centered */
+/* Container and Titles */
 .org-section {
   max-width: 1100px;
   margin: 20px auto;
@@ -6,7 +6,6 @@
   box-sizing: border-box;
 }
 
-/* Section title */
 .section-title {
   text-align: center;
   font-size: 2rem;
@@ -16,125 +15,134 @@
   font-weight: 700;
 }
 
-/* Organisation card container */
+/* Organisation Card */
 .org-card {
   background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 1px 10px rgba(227,238,249,0.8);
-  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 1px 12px #e3eef9;
+  padding: 28px 18px;
   margin-bottom: 28px;
   box-sizing: border-box;
 }
 
-/* Header flex container for title and image */
+/* Card Header: Flex on desktop, column on mobile */
 .org-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 32px;
   flex-wrap: wrap;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  justify-content: flex-start;
 }
 
-/* Title column takes 2/3 space, minimum width for smaller screens */
+/* Title column */
 .org-title-col {
   flex: 2 1 300px;
   min-width: 160px;
 }
 
-/* Heading styling */
 .org-title-col h3 {
   font-size: 2rem;
   margin: 0;
   color: #1978a5;
   font-weight: bold;
+  text-align: left;
 }
 
-/* Image column takes 1/3 space */
+/* Image column */
 .org-img-col {
-  flex: 1 1 170px;
-  min-width: 120px;
+  flex: 1 1 240px;
+  min-width: 140px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Organisation image styles */
-/* Default (Large Desktop) */
 .org-img-col img {
   width: 240px;
   height: 240px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 16px;
   max-width: 100%;
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
-/* Tablet (900px and below) */
-@media (max-width: 900px) {
-  .org-img-col img {
-    width: 180px;
-    height: 180px;
-  }
-}
-
-/* Mobile (600px and below) */
-@media (max-width: 600px) {
-  .org-img-col img {
-    width: 120px;
-    height: 120px;
-  }
-}
-
-
-/* Contact details styling */
+/* Organisation Contact */
 .org-contact {
-  margin-top: 6px;
-  font-size: 1.05rem;
+  margin-top: 10px;
+  font-size: 1.08rem;
   color: #444;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
-/* Description paragraph styling */
+/* Organisation About Paragraph */
 .org-about {
-  margin-top: 12px;
+  margin-top: 14px;
   line-height: 1.6;
-  font-size: 1rem;
+  font-size: 1.03rem;
   color: #333;
+  text-align: justify;
+  /* Justified text on ALL screens */
 }
 
-/* Responsive adjustments */
+/* ==== RESPONSIVE STYLES ==== */
 
-/* For tablets and small desktops (max-width 900px) */
+/* Tablets and below (900px and lower) */
 @media (max-width: 900px) {
   .section-title { font-size: 1.5rem; }
-  .org-header { gap: 18px; }
-  .org-card { padding: 17px; }
-  .org-title-col h3 { font-size: 1.3rem; }
-  .org-img-col img {
-    width: 120px;
-    height: 120px;
-  }
+  .org-header { gap: 21px; }
+  .org-card { padding: 20px 9px; }
+  .org-title-col h3 { font-size: 1.4rem; }
+  .org-img-col img { width: 160px; height: 160px; border-radius: 12px; }
 }
 
-/* For phones and very small tablets (max-width 600px) */
+/* Mobiles/small tablets (600px and lower) */
 @media (max-width: 600px) {
+  /* Stack header vertically and center everything */
   .org-header {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
   }
   .org-title-col, .org-img-col {
     width: 100%;
-    min-width: auto;
+    min-width: 0;
     flex: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .org-title-col h3 {
+    font-size: 1.15rem;
+    text-align: center;
+    width: 100%;
   }
   .org-img-col img {
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
+    border-radius: 8px;
+    margin: 0 auto;
   }
-  .org-card { padding: 12px; }
-  .section-title { font-size: 1.2rem; }
-  .org-title-col h3 { font-size: 1.1rem; }
-  .org-contact { font-size: 0.95rem; }
-  .org-about { font-size: 0.95rem; }
+  .org-card { padding: 12px 5px; }
+  .section-title { font-size: 1.07rem; }
+  .org-contact { font-size: 0.97rem; justify-content: center; text-align: center; }
+  .org-about {
+    font-size: 0.98rem;
+    margin-top: 10px;
+    text-align: justify;
+  }
+}
+
+/* Extra small screens (400px and lower) */
+@media (max-width: 400px) {
+  .org-img-col img { width: 85px; height: 85px;}
+  .org-title-col h3 { font-size: 0.97rem; }
+  .section-title { font-size: 0.95rem; }
 }
